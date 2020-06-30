@@ -6,8 +6,8 @@
     --body: #401208;
     --body2: #0D0D0D;
     --main-background: #BF8F73;
-    --menu-text: invert(1);
-    /*--menu-text: #8C5D42;*/
+    /*--menu-text: invert(1);*/
+    --menu-text: #8C5D42;
     --main-text: #F2E4F0;
 }
 
@@ -26,12 +26,12 @@ body::-webkit-scrollbar {
     min-width: 33.33%;
     max-width: 80%;
     margin: auto;
-    box-shadow: black 0 0 40px;
+    box-shadow: black 0 0 20px 10px;
 }
 
 .top_bar {
     margin: auto;
-    box-shadow: black 0 0 20px 20px inset;
+    box-shadow: black 0 0 20px 10px;
 }
 
 .wrapper-menu {
