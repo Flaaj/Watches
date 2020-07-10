@@ -5,10 +5,11 @@
 :root {
     --body: #401208;
     --body2: #0D0D0D;
-    --main-background: #BF8F73;
+    --main-background: var(--body2);
     /*--menu-text: invert(1);*/
     --menu-text: #8C5D42;
-    --main-text: #F2E4F0;
+    --main-text: #BF8F73;
+    --fill: #F2E4F0;
 }
 
 body {
@@ -26,12 +27,12 @@ body::-webkit-scrollbar {
     min-width: 33.33%;
     max-width: 80%;
     margin: auto;
-    box-shadow: black 0 0 20px 10px;
+    box-shadow: black 0 0 40px 5px;
 }
 
 .top_bar {
     margin: auto;
-    box-shadow: black 0 0 20px 10px;
+    /*box-shadow: black 0 0 20px 10px;*/
 }
 
 .wrapper-menu {
@@ -50,25 +51,25 @@ body::-webkit-scrollbar {
     justify-content: center;
     width: 100%;
     height: 15vh;
-    transition: 0.5s;
+    transition: 0.25s;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: 4vh 0 8vh black inset, -4vh 0 8vh black inset;
+    box-shadow: 2vh 0 4vh black inset, -2vh 0 4vh black inset;
 }
 
-.menu-item:not(.menu--main):hover {
+.menu-item:not(.top-item):hover {
     height: 25vh;
 }
 
-.menu-item.menu--main {
+.menu-item.top-item {
     position: sticky;
     top: 0;
+    height: 30vh;
 }
 
 .menu--main {
     background-image: url(../images/saxonia.jpg);
-    height: 25vh;
 }
 
 .menu--posts {
@@ -125,7 +126,7 @@ body::-webkit-scrollbar {
 }
 
 .main-item--inner::-webkit-scrollbar-thumb {
-    border: 1px solid #222;
+    border: 1px solid var(--fill);
     border-radius: 10px;
-    background-color: #111;
+    background-color: var(--body2);
 }
